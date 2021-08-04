@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: ani-ferreira/project
+  branch: main
 
 media_folder: static/assets
 

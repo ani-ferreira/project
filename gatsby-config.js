@@ -4,5 +4,19 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 module.exports = {
-  plugins: [`gatsby-plugin-netlify-cms`],
+  plugins: [
+    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/blog`,
+      },
+    },
+  ],
+  siteMetadata: {
+    title: "Titulo de anita",
+    description: "este es un proyecto",
+    copyright: "This website is copyright 2021",
+  },
 }
