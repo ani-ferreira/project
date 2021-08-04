@@ -1,7 +1,9 @@
 backend:
-  name: test-repo
+  name: github
+  repo: ani-ferreira/project
+
 media_folder: static/assets
-public_folder: /assets
+
 collections:
   - name: blog
     label: Blog
@@ -9,6 +11,6 @@ collections:
     create: true
     fields:
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
+      - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
