@@ -13,6 +13,7 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
+    `gatsby-transformer-remark`,
   ],
   siteMetadata: {
     title: "Titulo de anita",
