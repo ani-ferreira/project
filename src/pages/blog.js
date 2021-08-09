@@ -1,16 +1,21 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
 
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="My Blog Posts">
-      <ul>
-        {data.allFile.nodes.map(node => (
-          <li key={node.name}>{node.name}</li>
-        ))}
-      </ul>
-      <h1>{data.allFile.nodes.name} </h1>
+      {data.allMarkdownRemark.nodes.map(node => (
+        <Link to={"/blog/"} key={node.id}>
+          <h3>{node.frontmatter.title}</h3>
+          <p>Posted: {node.frontmatter.date}</p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: data.allMarkdownRemark.nodes.html,
+            }}
+          />
+        </Link>
+      ))}
     </Layout>
   )
 }
@@ -18,9 +23,14 @@ export default BlogPage
 
 export const query = graphql`
   query {
-    allFile {
+    allMarkdownRemark {
       nodes {
-        name
+        frontmatter {
+          date
+          title
+        }
+        html
+        id
       }
     }
   }
