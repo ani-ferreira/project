@@ -1,5 +1,5 @@
 ---
-path: martes
+path: /blog/
 date: 2021-08-11T02:04:54.397Z
 title: un titulo de martes
 ---
