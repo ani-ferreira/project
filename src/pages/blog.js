@@ -11,7 +11,6 @@ const BlogPage = ({ data }) => {
           <Card
             title={node.frontmatter.title}
             description={node.frontmatter.date}
-            body={{ __html: node.html }}
           />
 
           <div dangerouslySetInnerHTML={{ __html: node.html }} />

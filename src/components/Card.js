@@ -3,7 +3,7 @@ import "../styles/card.css"
 import { Link } from "gatsby"
 import { btn } from "../styles/home.module.css"
 
-const Card = ({ title, description, body }) => {
+const Card = ({ title, description }) => {
   return (
     <div className="card-container">
       <div className="card-content">
