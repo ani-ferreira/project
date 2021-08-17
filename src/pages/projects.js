@@ -1,14 +1,14 @@
 import React from "react"
-import Layout from "../components/Layout"
 
-const Projects = () => {
+const Projects = data => {
   return (
-    <Layout>
-      <div>
-        <h2>Portfolio</h2>
-        <h3>Projects & Websites I've Created</h3>
-      </div>
-    </Layout>
+    <h3>trying to filter data, maybe the filesystem is wrong</h3>
+    /* <Layout>
+      {data.allMarkdownRemark.nodes.map(node => (
+        <section key={node.id}>title={node.frontmatter.title}</section>
+      ))}
+      import layout if use
+    </Layout>*/
   )
 }
 

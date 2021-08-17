@@ -10,7 +10,7 @@ const BlogPage = ({ data }) => {
         <section key={node.id}>
           <Card
             title={node.frontmatter.title}
-            description={node.frontmatter.date}
+            /* description={node.frontmatter.date}*/
           />
 
           <div dangerouslySetInnerHTML={{ __html: node.html }} />
@@ -21,14 +21,11 @@ const BlogPage = ({ data }) => {
 }
 export default BlogPage
 
-/* dont know how to insert dangerously html.. inside the card*/
-
 export const query = graphql`
   query {
     allMarkdownRemark {
       nodes {
         frontmatter {
-          date
           title
         }
         html
