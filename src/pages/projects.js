@@ -1,15 +1,33 @@
 import React from "react"
+import Layout from "../components/Layout"
+import { graphql } from "gatsby"
 
-const Projects = data => {
+const Projects = ({ data }) => {
   return (
-    <h3>trying to filter data, maybe the filesystem is wrong</h3>
-    /* <Layout>
-      {data.allMarkdownRemark.nodes.map(node => (
-        <section key={node.id}>title={node.frontmatter.title}</section>
+    <Layout>
+      {data.allMarkdownRemark.edges.map(edge => (
+        <div key={edge.node.id}>
+          <h3>{edge.node.frontmatter.title}</h3>
+        </div>
       ))}
-      import layout if use
-    </Layout>*/
+    </Layout>
   )
 }
 
 export default Projects
+
+/*no puse el body porque no lo pedi por query al html*/
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(filter: { frontmatter: { path: { eq: "/project/" } } }) {
+      edges {
+        node {
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  }
+`
