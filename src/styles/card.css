@@ -1,0 +1,21 @@
+.card-container {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-title {
+  color: black;
+}
+
+.card-description {
+  color: grey;
+}
+.card-content {
+  margin: 1rem;
+}

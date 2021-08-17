@@ -1,21 +1,28 @@
 import * as React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
+import Card from "../components/Card"
 
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="My Blog Posts">
       {data.allMarkdownRemark.nodes.map(node => (
-        <Link to={"/blog/"} key={node.id}>
-          <h3>{node.frontmatter.title}</h3>
-          <p>Posted: {node.frontmatter.date}</p>
+        <section key={node.id}>
+          <Card
+            title={node.frontmatter.title}
+            description={node.frontmatter.date}
+            body={{ __html: node.html }}
+          />
+
           <div dangerouslySetInnerHTML={{ __html: node.html }} />
-        </Link>
+        </section>
       ))}
     </Layout>
   )
 }
 export default BlogPage
+
+/* dont know how to insert dangerously html.. inside the card*/
 
 export const query = graphql`
   query {
