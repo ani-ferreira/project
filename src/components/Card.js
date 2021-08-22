@@ -1,7 +1,5 @@
 import React from "react"
 import "../styles/card.css"
-import { Link } from "gatsby"
-import { btn } from "../styles/home.module.css"
 
 const Card = ({ title, description }) => {
   return (
@@ -11,11 +9,8 @@ const Card = ({ title, description }) => {
           <h3> {title}</h3>
         </div>
         <div className="card-description">
-          <p> {description}</p>
+          <p> Fecha: {description}</p>
         </div>
-        <Link className={btn} to="/contact">
-          Ver más
-        </Link>
       </div>
     </div>
   )
