@@ -8,11 +8,11 @@ export default function Home() {
     <Layout>
       <section className={header}>
         <div>
-          <h2>Design</h2>
-          <h3>Develop & Deploy</h3>
-          <p>UX designer & web developer based in Manchester.</p>
+          <h2>Title</h2>
+          <h3>subtitle</h3>
+
           <Link className={btn} to="/contact">
-            Contactame
+            CTA boton
           </Link>
         </div>
       </section>
