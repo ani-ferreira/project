@@ -9,7 +9,7 @@ const BlogIndex = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <p>No hay post para ver.</p>
+        <p>No hay post para ver. </p>
       </Layout>
     )
   }
