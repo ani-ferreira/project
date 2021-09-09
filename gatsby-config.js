@@ -14,14 +14,7 @@ module.exports = {
       },
     },
 
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `project`,
-        path: `${__dirname}/project`,
-      },
-      __key: "project",
-    },
+  
 
     `gatsby-transformer-remark`,
     "gatsby-plugin-mdx",
