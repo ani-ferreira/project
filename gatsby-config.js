@@ -14,13 +14,11 @@ module.exports = {
       },
     },
 
-  
-
     `gatsby-transformer-remark`,
     "gatsby-plugin-mdx",
   ],
   siteMetadata: {
-    title: "Titulo de anita",
+    title: "Titulo",
     description: "este es un proyecto",
     copyright: "This website is copyright 2021",
   },
