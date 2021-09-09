@@ -1,11 +1,13 @@
+/*header*/
+
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
   align-items: center;
+  height: 100vh;
 }
+
 .header h2 {
   font-size: 4em;
+  color: #3f2e18;
 }
 .header h3 {
   font-size: 3em;
@@ -14,9 +16,11 @@
 }
 .btn {
   display: inline-block;
-  background: #d42990;
+  background: #3f2e18;
   padding: 10px 16px;
   border-radius: 10px;
   margin-top: 20px;
   font-weight: 500;
+  color: white;
 }
+/*about*/
