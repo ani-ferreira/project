@@ -2,25 +2,22 @@
 
 .header {
   align-items: center;
-  height: 100vh;
+  text-align: center;
+  margin: auto;
+  height: 86vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  text-align: center;
+  align-self: center;
 }
 
-.header h2 {
-  font-size: 4em;
-  color: #3f2e18;
-}
-.header h3 {
-  font-size: 3em;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-.btn {
-  display: inline-block;
-  background: #3f2e18;
-  padding: 10px 16px;
-  border-radius: 10px;
-  margin-top: 20px;
-  font-weight: 500;
-  color: white;
+.title h2 {
+  font-family: "Oleo Script", cursive;
+  font-size: 4rem;
+  font-weight: 200;
 }
 /*about*/

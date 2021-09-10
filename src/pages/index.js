@@ -1,25 +1,21 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/Layout"
-import About from "../components/about"
-import { header, btn } from "../styles/home.module.css"
+import * as styles from "../styles/home.module.css"
 
 export default function Home() {
   return (
     <Layout>
-      <section className={header}>
-        <div>
-          <h2>titulo</h2>
-          <h3>subtitle</h3>
-
-          <Link className={btn} to="/contact">
-            CTA boton
-          </Link>
+      <section className={styles.header}>
+        <div className={styles.title}>
+          <h2>
+            "Una de las mejores cosas de la vida es que debemos interrumpir
+            regularmente cualquier labor y concentrarnos en la comida"
+            <br />
+            <span className="autor">-Luciano Pavarotti</span>
+          </h2>
         </div>
       </section>
-      <section>
-        <About />
-      </section>
+      <section></section>
     </Layout>
   )
 }

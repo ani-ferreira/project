@@ -10,7 +10,6 @@ const BlogPostTemplate = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <article
-        style={{ color: "red" }}
         className="blog-post"
         itemScope
         itemType="http://schema.org/Article"
