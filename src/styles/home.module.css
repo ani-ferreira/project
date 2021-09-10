@@ -20,4 +20,11 @@
   font-size: 4rem;
   font-weight: 200;
 }
-/*about*/
+
+/*on mobil*/
+
+@media only screen and (max-width: 600px) {
+  .title h2 {
+    font-size: 2rem;
+  }
+}
